@@ -2,8 +2,6 @@ import { VFC } from "react"
 
 import { UserProps, UserListProps } from "@/types/User"
 
-import { ExLink } from "@/components/ui/ExLink"
-
 const UserTableItem: VFC<UserProps> = ({ user }) => {
   const { id, name, gitHubUserName } = user
   const gitHubUserPage = `https://github.com/${gitHubUserName}`
@@ -14,7 +12,14 @@ const UserTableItem: VFC<UserProps> = ({ user }) => {
       <td className="py-4 px-6">{name}</td>
       <td className="py-4 px-6">
         {gitHubUserName ? (
-          <ExLink href={gitHubUserPage}>{gitHubUserName}</ExLink>
+          <a
+            href={gitHubUserPage}
+            target="_blank"
+            rel="noreferrer"
+            className="text-cyan-800 no-underline hover:underline"
+          >
+            {gitHubUserName}
+          </a>
         ) : (
           <span className="text-gray-300">{"none"}</span>
         )}
