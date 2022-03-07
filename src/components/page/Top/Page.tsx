@@ -8,10 +8,10 @@ export const TopPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>NextWind</title>
+        <title>Next & daisyUI</title>
         <meta
           name="description"
-          content="A template for prototyping with Next.js and Tailwind CSS"
+          content="A template for prototyping with Next.js and daisy UI"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
