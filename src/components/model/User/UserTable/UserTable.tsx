@@ -16,12 +16,12 @@ const UserTableItem: VFC<UserProps> = ({ user }) => {
             href={gitHubUserPage}
             target="_blank"
             rel="noreferrer"
-            className="text-cyan-800 no-underline hover:underline"
+            className="link link-secondary"
           >
             {gitHubUserName}
           </a>
         ) : (
-          <span className="text-gray-300">{"none"}</span>
+          <span className="text-error">{"none"}</span>
         )}
       </td>
     </tr>
