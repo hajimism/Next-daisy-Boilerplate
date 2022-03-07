@@ -1,20 +1,18 @@
-# Nextwind Prototyping Boilerplate
+# Next.js daisyUI Boilerplate
 
-A boilerplate for prototyping with Next.js & Tailwind CSS, which would save your time a lot!
+A boilerplate for prototyping with Next.js & daisyUI, which would save your time a lot!
 
 This project is made with...
 
 - Next.js
 - TypeScript
 - Tailwind CSS
+- daisyUI
 - Storybook
 - husky & lint-staged
 - scaffdog
 
-These are demo sites.
-
-- [App](https://nextwind-prototyping-boilerplate.vercel.app/)
-- [Storybook](https://61f8f16f224018003f2121c3-nrfgktmbqm.chromatic.com/?path=/story/model-user-usertable--default)
+Demo is [here](https://next-daisy-boilerplate.vercel.app/).
 
 ## Sammary of Strength
 
@@ -106,6 +104,7 @@ The template which would be generated is [here](https://github.com/HajimexxxNaka
 When you create a new component related to model, and...
 
 ① when the component describes single of model, use this command at first.
+
 ```zsh
 npx scaffdog generate mcs
 ```
@@ -127,6 +126,7 @@ Then, scaffdog will ask you some questions. This is an example of creating Stude
 ```
 
 ② when the component describes list of model, use this command at first.
+
 ```zsh
 npx scaffdog generate mcl
 ```
